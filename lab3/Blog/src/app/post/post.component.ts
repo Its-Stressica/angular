@@ -13,7 +13,7 @@ import { Post } from '../app.component';
 })
 export class PostComponent implements OnInit, OnDestroy {
   @Input() myPost!: Post;
-  @Output() onRemove = new EventEmitter<number>();
+  @Output() onRemove = new EventEmitter<string>();
   date_post!: Date;
 
   constructor() {}

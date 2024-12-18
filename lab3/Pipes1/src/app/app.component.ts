@@ -31,7 +31,9 @@ import { Component } from '@angular/core';
 
     <div>{{ users | join }}</div>
     <div>{{ users | join : 1 }}</div>
-    <div>{{ users | join : 1 : 3 }}</div>`,
+    <div>{{ users | join : 1 : 3 }}</div>
+
+    <div>sqrt: {{ x | sqrt }}</div>`,
 })
 export class AppComponent {
   title = 'Pipes1';

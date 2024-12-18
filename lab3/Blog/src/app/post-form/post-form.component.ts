@@ -1,6 +1,8 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Post } from '../app.component';
 import { Observable } from 'rxjs/internal/Observable';
+import { v4 as uuidv4 } from 'uuid';
+
 @Component({
   selector: 'app-post-form',
   templateUrl: './post-form.component.html',
@@ -19,6 +21,7 @@ export class PostFormComponent implements OnInit {
         title: this.title,
         text: this.text,
         date: this.date_post,
+        id: uuidv4(),
       };
       this.onAdd.emit(post);
       console.log('New post', post);

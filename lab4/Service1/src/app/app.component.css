@@ -1,0 +1,18 @@
+.cardinput {
+  margin: 0.4rem 1rem;
+}
+td {
+  padding: 5px; /* Поля вокруг текста */
+  margin: 0.4rem 1.8rem;
+}
+table {
+  width: 100%; /* Ширина таблицы */
+  overflow: auto;
+  color: rgb(0, 0, 0); /* Цвет текста */
+  border-spacing: 1px; /* Расстояние между ячейками */
+}
+th {
+  padding: 5px; /* Поля вокруг текста */
+  margin: 0.4rem 1.8rem;
+  text-align: left;
+}
