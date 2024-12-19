@@ -39,7 +39,7 @@ import { LogService } from './log.service';
 
   styleUrls: ['./app.component.css'],
 
-  providers: [DataService, LogService],
+  providers: [DataService],
 })
 export class AppComponent implements OnInit {
   name: string = '';
