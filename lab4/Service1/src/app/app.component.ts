@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from './data.service';
 import { Phone } from './phone';
+import { LogService } from './log.service';
 @Component({
   selector: 'app-root',
   template: `
@@ -38,7 +39,7 @@ import { Phone } from './phone';
 
   styleUrls: ['./app.component.css'],
 
-  providers: [DataService],
+  providers: [DataService, LogService],
 })
 export class AppComponent implements OnInit {
   name: string = '';
